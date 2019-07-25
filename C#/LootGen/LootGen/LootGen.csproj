@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4998D407-F061-4E39-AABF-FCC9397D3325}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LootGen</RootNamespace>
+    <AssemblyName>LootGen</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Users\Joel\Documents\LootGen Publish V1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Equipment Default.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F2CD2B63A82ACD1DB59F817CB2494CF1F57E4389</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LootGen_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateItem.Designer.cs">
+      <DependentUpon>CreateItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateItemPool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateItemPool.Designer.cs">
+      <DependentUpon>CreateItemPool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTemplate.Designer.cs">
+      <DependentUpon>CreateTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImport.Designer.cs">
+      <DependentUpon>FrmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemView.Designer.cs">
+      <DependentUpon>FrmItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageItemPools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageItemPools.Designer.cs">
+      <DependentUpon>FrmManageItemPools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageItems.Designer.cs">
+      <DependentUpon>FrmManageItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageTemplates.Designer.cs">
+      <DependentUpon>FrmManageTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotepad.Designer.cs">
+      <DependentUpon>FrmNotepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemPool.cs" />
+    <Compile Include="Item_Chance.cs" />
+    <Compile Include="ListViewSorter\ListViewColumnSorter.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\BetaDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\BetaPrimeDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\CauchyDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\ChiDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\ChiSquareDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\ContinuousUniformDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\ErlangDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\ExponentialDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\FisherSnedecorDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\FisherTippettDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\GammaDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\LaplaceDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\LognormalDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\NormalDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\ParetoDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\PowerDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\RayleighDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\StudentsTDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\TriangularDistribution.cs" />
+    <Compile Include="RandomImport\ContinuousRNDs\WeibullDistribution.cs" />
+    <Compile Include="RandomImport\DiscreteRNDs\BernoulliDistribution.cs" />
+    <Compile Include="RandomImport\DiscreteRNDs\BinomialDistribution.cs" />
+    <Compile Include="RandomImport\DiscreteRNDs\DiscreteUniformDistribution.cs" />
+    <Compile Include="RandomImport\DiscreteRNDs\GeometricDistribution.cs" />
+    <Compile Include="RandomImport\DiscreteRNDs\PoissonDistribution.cs" />
+    <Compile Include="RandomImport\Distribution.cs" />
+    <Compile Include="RandomImport\Generator.cs" />
+    <Compile Include="RandomImport\Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomImport\PseudoRNGs\ALFGenerator.cs" />
+    <Compile Include="RandomImport\PseudoRNGs\MT19937Generator.cs" />
+    <Compile Include="RandomImport\PseudoRNGs\StandardGenerator.cs" />
+    <Compile Include="RandomImport\PseudoRNGs\XorShift128Generator.cs" />
+    <Compile Include="RandomImport\Resources\ExceptionMessages.de.Designer.cs" />
+    <Compile Include="RandomImport\Resources\ExceptionMessages.Designer.cs" />
+    <Compile Include="RandomImport\Resources\ExceptionMessages.es.Designer.cs" />
+    <Compile Include="RandomImport\Resources\ExceptionMessages.fr.Designer.cs" />
+    <Compile Include="Rarity.cs" />
+    <Compile Include="SeedValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeedValue.Designer.cs">
+      <DependentUpon>SeedValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs" />
+    <EmbeddedResource Include="CreateItem.resx">
+      <DependentUpon>CreateItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateItemPool.resx">
+      <DependentUpon>CreateItemPool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTemplate.resx">
+      <DependentUpon>CreateTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImport.resx">
+      <DependentUpon>FrmImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemView.resx">
+      <DependentUpon>FrmItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageItemPools.resx">
+      <DependentUpon>FrmManageItemPools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageItems.resx">
+      <DependentUpon>FrmManageItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageTemplates.resx">
+      <DependentUpon>FrmManageTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotepad.resx">
+      <DependentUpon>FrmNotepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RandomImport\Resources\ExceptionMessages.de.resx" />
+    <EmbeddedResource Include="RandomImport\Resources\ExceptionMessages.es.resx" />
+    <EmbeddedResource Include="RandomImport\Resources\ExceptionMessages.fr.resx" />
+    <EmbeddedResource Include="RandomImport\Resources\ExceptionMessages.resx" />
+    <EmbeddedResource Include="SeedValue.resx">
+      <DependentUpon>SeedValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LootGen_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Equipment Default.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

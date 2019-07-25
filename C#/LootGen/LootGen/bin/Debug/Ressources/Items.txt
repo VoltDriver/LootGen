@@ -1,0 +1,1 @@
+Sword*|*Weapon***Cost*,*Damage*|*S*|*Cost***500 gold*,*Damage***30d6*|*Ressources\Pictures\index.jpg*|*Weapon*&*Super Gun*|*Item***Cost*,*Name*|*B*|*Cost***800*,*Name***Super Gun*|*Ressources\Pictures\FFX_Weapon_-_Sword_5.png*|*Weapon*&*Sword of the Knight*|*Weapon***Cost*,*Damage*|*SS*|*Cost***222*,*Damage***34*|*Ressources\Pictures\sword.png*|*Weapon
